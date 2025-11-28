@@ -14,13 +14,24 @@ ul{
     width: 98px;
     height: 34px;
 }
+.header .lists a:hover {
+   
+    color: green;
+
+}
+.header .lists a{
+    transition-property: color;
+    transition-duration: 1.2s;
+    transition-delay: .2;
+}
 .container{
     width: 100%;
     padding: 0 50px;
     max-width: 1400px;
 }
 .header{
-    
+    position: fixed;
+    width: 100%;
     padding: 40px 0;
 }
 .header .container{
