@@ -7,57 +7,174 @@
 a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-.logo img{
+
+.logo img {
     width: 98px;
     height: 34px;
 }
+
+body {
+    height: 1200px;
+}
+
 .header .lists a:hover {
-   
+
     color: green;
 
 }
-.header .lists a{
+
+.header .lists a {
     transition-property: color;
     transition-duration: 1.2s;
     transition-delay: .2;
 }
-.container{
+
+.header .lists {
+    text-align: center;
+}
+
+.container {
     width: 100%;
     padding: 0 50px;
     max-width: 1400px;
+    background-color: #F5F5F5;
+
 }
-.header{
+
+.header {
     position: fixed;
     width: 100%;
     padding: 40px 0;
+    align-items: start;
+
 }
-.header .container{
+
+.header .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.header ul{
+
+.header ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
 }
-.fa-solid{
-   width: 20px;
-   height: 20px;
-   padding: 5px;
-   
+
+.fa-solid {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
 }
-.header button{
+
+.header button,.footer button {
     border: 0;
     padding: 4px 2px;
     background-color: #FB2E86;
 }
-.header input{
+
+.header input,
+.footer input {
     border: 0;
     padding-left: 5px;
 }
-.header form{
+
+
+.header form,
+.footer form {
     border: 1px solid #E7E6EF;
     display: flex;
+}
+
+.setting {
+    display: none;
+}
+
+@media screen and (min-width:0) and (max-width:700px) {
+    body {
+        background-color: teal;
+    }
+
+    .header .lists,
+    .header .search-form {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+    }
+
+}
+
+p {
+    padding-top: 100px;
+}
+
+.row {
+    background-color: #EEEFFB;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer .row {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.footer .left-side {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .left-side {
+    width: calc((100% - 20) / 2);
+}
+.footer .cont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.footer .right-side {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer .right-side {
+    width: calc((100% - 20) / 2);
+}
+@media screen and (min-width:0) and  (max-width:600px) {
+    .footer .left-side,.footer .right-side{
+        width: 100%;
+    }
+    
+}
+
+
+.footer .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
 }
