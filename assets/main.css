@@ -322,7 +322,8 @@ body {
     flex-direction: column;
     gap: 15px;
 }
-.last-product h2{
+
+.last-product h2 {
     color: #151875;
     font-size: x-large;
     font-family: "Josefin Sans", sans-serif;
@@ -373,7 +374,7 @@ body {
     height: 250px;
     align-items: center;
     background-color: #F7F7F7;
-    
+
 }
 
 .item-product .info-product {
@@ -386,12 +387,12 @@ body {
 
 .shopex .container {
     margin-top: 50px;
-     background-color: #F5F5F5;
+    background-color: #F5F5F5;
 }
 
 .shopex .row {
     justify-content: center;
-     
+
 }
 
 .shopex .supports {
@@ -400,7 +401,7 @@ body {
     flex-direction: column;
     gap: 20px;
     align-items: center;
- 
+
 }
 
 .support-item {
@@ -411,7 +412,8 @@ body {
     margin-bottom: 30px;
     text-align: center;
 }
-.support{
+
+.support {
     background-color: #FFFFFF;
     padding: 10px 10px;
 }
@@ -433,6 +435,140 @@ body {
     padding-top: 20px;
 }
 
+.trending-products .container {
+    padding-top: 50px;
+    background-color: white;
+
+}
+
+.trending-products .row {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.trending-product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.all-products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 20px;
+
+}
+
+.all-product {
+    width: calc((100% - 60px) / 4);
+    background-color: white;
+}
+
+.all-product .all-product-image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #F5F6F8;
+
+}
+
+.trending-product h2 {
+    color: #151875;
+    font-size: xx-large;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 15px;
+}
+
+.all-product h3 {
+    padding: 10px;
+    color: #151875;
+    font-size: large;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.all-product .all-product-info .color-span {
+    color: #151875;
+}
+
+.all-product .all-product-info .color-span-fixed {
+    text-decoration: line-through;
+}
+
+.all-product .all-product-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.top-categories .container {
+    padding-top: 50px;
+    background-color: white;
+
+}
+
+.top-categories .row {
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.top-category {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.all-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 20px;
+
+}
+
+.category {
+    width: calc((100% - 90px) / 4);
+
+}
+
+.category .category-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F6F7FB;
+    height: 200px;
+    align-items: center;
+}
+
+.top-category h2 {
+    color: #151875;
+    font-size: xx-large;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.category .info-category {
+    color: #151875;
+    font-size: small;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+}
+
+.category .details-category {
+    color: #151875;
+}
 
 .hero-section {
     background-image: url(./../image/Rectangle\ 102.png);
@@ -468,6 +604,76 @@ body {
     text-align: center;
     padding-top: 20px;
 
+}
+.blogs .container{
+    padding-top: 50px;
+    background-color: white;
+}
+
+.blogs .row{
+    justify-content: center;
+    background-color: white;
+}
+
+.all-blog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px;   
+}
+.blog{
+    width: calc(( 100% - 40px ) / 3 );
+}
+.blog .details-blogs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.blog .details-blogs span{
+    color: #151875;
+     font-size:smaller;
+    font-family: "Josefin Sans", sans-serif;
+}
+.blog .details-blogs i{
+    font-size: smaller;
+}
+.blog .details-blogs .fa-pen{
+    color: #FB2E86;
+}
+.blog .details-blogs .fa-calendar-days{
+    color: #FFA454;
+}
+.blog p{
+    color: #72718F;
+     font-size:medium;
+    padding-bottom: 10px;
+}
+.blog a{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.details-blogs{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.last-blogs h2{
+    color: #151875;
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 20px;
+     font-size:xx-large;
+    font-family: "Josefin Sans", sans-serif;
+}
+.blog h3{
+    color: #72718F;
+     font-size:small;
+    font-family: "Josefin Sans", sans-serif;
+    padding-bottom: 15px;
 }
 
 
