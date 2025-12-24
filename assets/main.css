@@ -40,7 +40,7 @@ body {
 .container {
     width: 100%;
     padding: 0 50px;
-    margin: 0 auto;
+    margin: auto;
     max-width: 1400px;
     background-color: #F5F5F5;
 
@@ -52,6 +52,7 @@ body {
     padding: 40px 0;
     align-items: start;
 
+
 }
 
 .header .container {
@@ -59,6 +60,9 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    background-color: white;
+    padding: 20px 20px;
+
 }
 
 .header ul {
@@ -114,9 +118,6 @@ body {
 
 }
 
-p {
-    padding-top: 100px;
-}
 
 .row {
     background-color: #EEEFFB;
@@ -124,6 +125,60 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
 
+}
+
+.row .hero-collection {
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+.hero-collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.hero-collections {
+    padding-bottom: 50px;
+}
+
+
+.hero-collection img {
+    height: 400px;
+}
+
+.hero-collection p {
+    padding-bottom: 10px;
+    color: #FB2E86;
+}
+
+.hero-collection button {
+    background-color: #FB2E86;
+    border: 0;
+    padding: 10px 25px;
+    color: #FFFFFF;
+}
+
+.hero-collection .para1 {
+    padding-top: 10px;
+}
+
+.hero-collection .para1-color {
+    color: #8A8FB9;
+}
+
+.hero-collection h2 {
+    color: #000000;
+    font-size: x-large;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.hero-collection .hero-collection-h2 {
+    margin-top: 10px;
 }
 
 .products .row {
@@ -138,6 +193,7 @@ p {
     color: #1A0B5B;
     font-size: xx-large;
     font-family: "Josefin Sans", sans-serif;
+
 }
 
 .products .product {
@@ -223,31 +279,159 @@ p {
 
     .products .product .product-item {
         justify-content: center;
-       
+
         width: calc((100% - 40px) / 3);
 
     }
 }
+
 @media screen and (min-width:500px) and (max-width:800px) {
 
     .products .product .product-item {
         justify-content: center;
-       
+
         width: calc((100% - 20px) / 2);
 
     }
 }
+
 @media screen and (min-width:0px) and (max-width:499px) {
 
     .products .product .product-item {
         justify-content: center;
-       
+
         width: 100%;
 
     }
 }
 
+.last-products .container {
+    padding-top: 50px;
+    background-color: white;
+}
 
+.last-products .row {
+    text-align: center;
+    background-color: white;
+}
+
+
+.last-products .last-product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+.last-product h2{
+    color: #151875;
+    font-size: x-large;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.items-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+
+}
+
+.items-product .item-product {
+    width: calc((100% - 40px) / 3);
+}
+
+.last-product .header-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.last-product .info-product h3 {
+    color: #151875;
+    font-size: large;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.last-product .info-product span {
+    color: #151875;
+}
+
+.last-product .info-product .span-color {
+    color: #FB2448;
+    text-decoration: line-through;
+
+}
+
+.item-product .image-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    background-color: #F7F7F7;
+    
+}
+
+.item-product .info-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.shopex .container {
+    margin-top: 50px;
+     background-color: #F5F5F5;
+}
+
+.shopex .row {
+    justify-content: center;
+     
+}
+
+.shopex .supports {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+ 
+}
+
+.support-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.support{
+    background-color: #FFFFFF;
+    padding: 10px 10px;
+}
+
+.support p {
+    color: #1A0B5B;
+    padding-top: 10px;
+}
+
+.support h3 {
+    color: #151875;
+    padding-top: 10px;
+}
+
+.supports h2 {
+    color: #151875;
+    font-size: xx-large;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 20px;
+}
 
 
 .hero-section {
@@ -319,6 +503,7 @@ p {
 
 .footer .right-side {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
 
