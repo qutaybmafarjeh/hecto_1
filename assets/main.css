@@ -47,11 +47,12 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
     align-items: start;
-
+    top: 0;
+    z-index: 100;
 
 }
 
@@ -104,7 +105,7 @@ body {
 
 @media screen and (min-width:0) and (max-width:700px) {
     body {
-        background-color: teal;
+        background-color: white;
     }
 
     .header .lists,
@@ -201,6 +202,8 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
+   
+    
 
 
 
@@ -235,15 +238,62 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     width: calc((100% - 60px) / 4);
+   
 
 
 }
+.products .product-image .icons{
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    opacity: 0;
+}
+
+ .product-items .product-item:hover  {
+   .product-details{
+    background-color: #2F1AC4;
+   }
+    
+}
+
+ .product-item:hover .icons{
+        opacity: 1;
+    }
+     .product-item:hover .product-image button{
+        opacity: 1;
+    }
+.product-items .product-item{
+    transition-property: color;
+    transition-duration: 1.2s;
+    transition-delay: .2;
+    
+}
+.product-item .product-image button{
+    background-color: #08D15F;
+     border: 0;
+    padding: 10px 25px;
+    position: absolute;
+    opacity: 0;
+}
+
+.product-item .product-image .button-hidden{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+   
+}
+
 
 
 .products .product-image {
     background-color: #F6F7FB;
     height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    position: relative;
+    
 }
 
 .products button {
@@ -385,6 +435,29 @@ body {
     padding-top: 5px;
 }
 
+@media screen and (min-width:551px) and (max-width:950px) {
+
+    .last-products .last-product .item-product {
+        justify-content: center;
+
+        width: calc((100% - 20px) / 2);
+
+    }
+}
+
+@media screen and (min-width:0) and (max-width:550px) {
+
+    .last-products .last-product .item-product {
+        justify-content: center;
+
+        width: 100%;
+
+    }
+}
+
+
+
+
 .shopex .container {
     margin-top: 50px;
     background-color: #F5F5F5;
@@ -435,6 +508,35 @@ body {
     padding-top: 20px;
 }
 
+@media screen and (min-width:600px) and (max-width:700px) {
+
+    .shopex .supports .support{
+        justify-content: center;
+
+       width: calc((100% - 40px) / 3 );
+
+    }
+}
+@media screen and (min-width:400px) and (max-width:599px) {
+
+    .shopex .supports .support{
+        justify-content: center;
+        
+
+       width: calc((100% - 20px) / 2 );
+
+    }
+}
+@media screen and (min-width:0) and (max-width:499px) {
+
+    .shopex .supports .support {
+        justify-content: center;
+
+        width: 100%;
+
+    }
+}
+
 .trending-products .container {
     padding-top: 50px;
     background-color: white;
@@ -454,6 +556,35 @@ body {
     align-items: center;
     gap: 20px;
 
+}
+
+@media screen and (min-width:801px) and (max-width:950px) {
+    .trending-products .trending-product .all-product {
+        justify-content: center;
+
+        width: calc((100% - 40px) / 3);
+
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:800px) {
+
+    .trending-products .trending-product .all-product {
+        justify-content: center;
+
+        width: calc((100% - 20px) / 2);
+
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:499px) {
+
+    .trending-products .trending-product .all-product {
+        justify-content: center;
+
+        width: 100%;
+
+    }
 }
 
 .all-products {
@@ -550,6 +681,8 @@ body {
     justify-content: center;
     background-color: #F6F7FB;
     height: 200px;
+    width: 200px;
+    border-radius: 50%;
     align-items: center;
 }
 
@@ -568,6 +701,34 @@ body {
 
 .category .details-category {
     color: #151875;
+}
+@media screen and (min-width:700px) and (max-width:950px) {
+    .top-categories .top-category .category {
+        justify-content: center;
+
+        width: calc(( 100% - 60px ) / 3 );
+
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:699px) {
+
+    .top-categories .top-category .category {
+        justify-content: center;
+
+        width: calc((100% - 30px) / 2);
+
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:499px) {
+
+    .top-categories .top-category .category {
+        justify-content: center;
+
+        width: 100%;
+
+    }
 }
 
 .hero-section {
@@ -605,75 +766,107 @@ body {
     padding-top: 20px;
 
 }
-.blogs .container{
+
+.blogs .container {
     padding-top: 50px;
     background-color: white;
 }
 
-.blogs .row{
+.blogs .row {
     justify-content: center;
     background-color: white;
 }
 
-.all-blog{
+.all-blog {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
-    padding: 20px;   
+    gap: 20px;
+    padding: 20px;
 }
-.blog{
-    width: calc(( 100% - 40px ) / 3 );
+
+.blog {
+    width: calc((100% - 40px) / 3);
 }
-.blog .details-blogs{
+
+.blog .details-blogs {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     padding-bottom: 20px;
 }
-.blog .details-blogs span{
+
+.blog .details-blogs span {
     color: #151875;
-     font-size:smaller;
+    font-size: smaller;
     font-family: "Josefin Sans", sans-serif;
 }
-.blog .details-blogs i{
+
+.blog .details-blogs i {
     font-size: smaller;
 }
-.blog .details-blogs .fa-pen{
+
+.blog .details-blogs .fa-pen {
     color: #FB2E86;
 }
-.blog .details-blogs .fa-calendar-days{
+
+.blog .details-blogs .fa-calendar-days {
     color: #FFA454;
 }
-.blog p{
+
+.blog p {
     color: #72718F;
-     font-size:medium;
+    font-size: medium;
     padding-bottom: 10px;
 }
-.blog a{
+
+.blog a {
     margin-top: 10px;
     text-decoration: underline;
 }
 
-.details-blogs{
+.details-blogs {
     display: flex;
     justify-content: flex-start;
-    
+
 }
-.last-blogs h2{
+
+.last-blogs h2 {
     color: #151875;
     text-align: center;
     font-size: xx-large;
     font-family: "Josefin Sans", sans-serif;
     padding: 20px;
-     font-size:xx-large;
+    font-size: xx-large;
     font-family: "Josefin Sans", sans-serif;
 }
-.blog h3{
+
+.blog h3 {
     color: #72718F;
-     font-size:small;
+    font-size: small;
     font-family: "Josefin Sans", sans-serif;
     padding-bottom: 15px;
+}
+@media screen and (min-width:850px) and (max-width:1240px) {
+
+    .blogs .last-blogs .blog {
+        justify-content: center;
+
+        width: calc((100% - 20px) / 2);
+
+    }
+}
+
+
+@media screen and (min-width:0px) and (max-width:849px) {
+
+    .blogs .last-blogs .blog{
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+    }
 }
 
 
