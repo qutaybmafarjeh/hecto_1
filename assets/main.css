@@ -49,10 +49,9 @@ body {
 .header {
     position: sticky;
     width: 100%;
-    padding: 20px 0;
     align-items: start;
     top: 0;
-    z-index: 100;
+    z-index:100;
 
 }
 
@@ -117,6 +116,7 @@ body {
         display: block;
     }
 
+
 }
 
 
@@ -138,9 +138,8 @@ body {
 .hero-collection {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
     align-items: center;
-    padding: 20px 30px;
+    padding:0 30px;
 }
 
 .hero-collections {
@@ -181,6 +180,26 @@ body {
 .hero-collection .hero-collection-h2 {
     margin-top: 10px;
 }
+@media screen and (min-width:5.1px)  and (max-width:800px) {
+
+    .hero-collections .hero-collection {
+        justify-content: center;
+        align-content: center;
+        
+
+    }
+}
+@media screen  and (max-width:500px) {
+
+    .hero-collections .hero-collection {
+      justify-content: center;
+        align-items: center;
+        
+    }
+    
+        
+}
+
 
 .products .row {
 
@@ -242,6 +261,10 @@ body {
     position: absolute;
     top: 5px;
     left: 3px;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    text-align-last: end;
     opacity: 0;
 }
 
@@ -276,6 +299,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    
    
 }
 
@@ -327,6 +351,7 @@ body {
         justify-content: center;
 
         width: calc((100% - 40px) / 3);
+       
 
     }
 }
@@ -335,7 +360,7 @@ body {
 
     .products .product .product-item {
         justify-content: center;
-
+        align-content: center;
         width: calc((100% - 20px) / 2);
 
     }
@@ -345,7 +370,7 @@ body {
 
     .products .product .product-item {
         justify-content: center;
-
+        align-content: center;
         width: 100%;
 
     }
@@ -389,11 +414,19 @@ body {
     flex-direction: column;
     gap:4px;
     position: absolute;
-    left: 2px;
+    left: 4px;
     justify-content: center;
     align-items: center;
     opacity: 0;
+    
+    
+    
 }
+.image-product .icons .fa-solid{
+    padding: 0;
+   
+}
+
 .item-product:hover .icons{
         opacity: 1;
        
@@ -536,38 +569,16 @@ body {
     font-family: "Josefin Sans", sans-serif;
     padding-top: 20px;
 }
-
-@media screen and (min-width:600px) and (max-width:700px) {
-
-    .shopex .supports .support{
+@media screen and (max-width:550px) {
+    .shopex .support-item{
         justify-content: center;
         align-items: center;
-        text-align: center;
-       width: calc((100% - 40px) / 3 );
-
     }
 }
-@media screen and (min-width:400px) and (max-width:599px) {
 
-    .shopex .supports .support{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
 
-       width: calc((100% - 20px) / 2 );
 
-    }
-}
-@media screen and (min-width:0) and (max-width:499px) {
 
-    .shopex .supports .support {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-
-    }
-}
 
 .trending-products .container {
     padding-top: 50px;
@@ -774,7 +785,8 @@ border-bottom: 10px;
 
     .top-categories .top-category .category {
         justify-content: center;
-
+        align-items: center;
+        
         width: calc((100% - 30px) / 2);
 
     }
@@ -784,7 +796,8 @@ border-bottom: 10px;
 
     .top-categories .top-category .category {
         justify-content: center;
-
+       align-items: center;
+       justify-items: center;
         width: 100%;
 
     }
@@ -910,7 +923,9 @@ border-bottom: 10px;
 
     .blogs .last-blogs .blog {
         justify-content: center;
-
+      align-items: center;
+      align-content: center;
+      
         width: calc((100% - 20px) / 2);
 
     }
@@ -920,9 +935,9 @@ border-bottom: 10px;
 @media screen and (min-width:0px) and (max-width:849px) {
 
     .blogs .last-blogs .blog{
-        justify-content: center;
+        text-align: center;
         align-items: center;
-
+        justify-items: center;
         width: 100%;
 
     }
